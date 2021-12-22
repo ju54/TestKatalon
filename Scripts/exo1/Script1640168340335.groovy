@@ -19,9 +19,15 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
+WebUI.waitForPageLoad(2)
+
 WebUI.navigateToUrl('https://katalon-demo-cura.herokuapp.com/')
 
+WebUI.waitForElementVisible(findTestObject('Page_CURA Healthcare Service/a_Make Appointment'), 5)
+
 WebUI.click(findTestObject('Object Repository/Page_CURA Healthcare Service/a_Make Appointment'))
+
+WebUI.waitForElementVisible(findTestObject('Page_CURA Healthcare Service/input_Username_username'), 5)
 
 WebUI.setText(findTestObject('Object Repository/Page_CURA Healthcare Service/input_Username_username'), 'John Doe')
 
@@ -29,10 +35,15 @@ WebUI.setEncryptedText(findTestObject('Object Repository/Page_CURA Healthcare Se
 
 WebUI.click(findTestObject('Object Repository/Page_CURA Healthcare Service/button_Login'))
 
+WebUI.waitForElementVisible(findTestObject('Page_CURA Healthcare Service/select_Tokyo CURA Healthcare Center        _5b4107'), 
+    5)
+
 WebUI.selectOptionByValue(findTestObject('Object Repository/Page_CURA Healthcare Service/select_Tokyo CURA Healthcare Center        _5b4107'), 
     'Hongkong CURA Healthcare Center', true)
 
 WebUI.click(findTestObject('Object Repository/Page_CURA Healthcare Service/input_Medicaid_programs'))
+
+WebUI.check(findTestObject('Page_CURA Healthcare Service/input_Medicaid_programs'))
 
 WebUI.click(findTestObject('Object Repository/Page_CURA Healthcare Service/input_Visit Date (Required)_visit_date'))
 
@@ -41,6 +52,8 @@ WebUI.click(findTestObject('Object Repository/Page_CURA Healthcare Service/td_24
 WebUI.click(findTestObject('Object Repository/Page_CURA Healthcare Service/button_Book Appointment'))
 
 WebUI.click(findTestObject('Object Repository/Page_CURA Healthcare Service/a_Go to Homepage'))
+
+WebUI.waitForElementVisible(findTestObject('Page_CURA Healthcare Service/a_Go to Homepage'), 5)
 
 WebUI.closeBrowser()
 
