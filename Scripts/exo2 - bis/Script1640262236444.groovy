@@ -19,30 +19,28 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.waitForPageLoad(5)
-
-WebUI.navigateToUrl('https://fr.wowhead.com/')
+WebUI.navigateToUrl('https://fr.wowhead.com/item=2168/chahuteurs-de-cadavre?bonus=6710')
 
 WebUI.waitForPageLoad(5)
 
-WebUI.click(findTestObject('Object Repository/WOW/Page_Wowhead  La seule chose sur laquelle l_610dae/button_Jaccepte'))
+WebUI.click(findTestObject('Object Repository/WOW/Page_Chahuteurs de cadavre - Objet - World _4f6cc4/button_Jaccepte'))
 
-WebUI.waitForElementNotVisible(findTestObject('Object Repository/WOW/Page_Wowhead  La seule chose sur laquelle l_610dae/button_Jaccepte'), 
-    5)
-
-WebUI.click(findTestObject('Object Repository/WOW/Page_Wowhead  Rend les chargements supporta_4a9743/button_Refuser'))
-
-WebUI.setText(findTestObject('Object Repository/WOW/Page_Wowhead  Chasse les jours pluvieux/input_Live_q'), 'Lardeur')
-
-WebUI.click(findTestObject('Object Repository/WOW/Page_Wowhead  Chasse les jours pluvieux/a_PNJLardeur'))
+WebUI.click(findTestObject('Object Repository/WOW/Page_Chahuteurs de cadavre - Objet - World _4f6cc4/button_Refuser'))
 
 WebUI.verifyTextPresent('Chahuteurs de cadavre', true, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyTextPresent('Chausses de Lardeur', true, FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('WOW/Page_Chahuteurs de cadavre - Objet - World _4f6cc4/Page_Chahuteurs de cadavre - Objet - World of Warcraft/valeur Armure'), 
+    2)
 
-WebUI.verifyTextPresent('Pioche en fer froid', true, FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('WOW/Page_Chahuteurs de cadavre - Objet - World _4f6cc4/Page_Chahuteurs de cadavre - Objet - World of Warcraft/valeur Intelligence'), 
+    12)
 
-WebUI.verifyTextPresent('Grèves de geôlier volées', true, FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('WOW/Page_Chahuteurs de cadavre - Objet - World _4f6cc4/Page_Chahuteurs de cadavre - Objet - World of Warcraft/valeur Endurance'), 
+    18)
 
-WebUI.verifyTextPresent('Espauliers de Tourne-Clé', true, FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('WOW/Page_Chahuteurs de cadavre - Objet - World _4f6cc4/Page_Chahuteurs de cadavre - Objet - World of Warcraft/valeur hâte'), 
+    13)
+
+WebUI.verifyElementPresent(findTestObject('WOW/Page_Chahuteurs de cadavre - Objet - World _4f6cc4/Page_Chahuteurs de cadavre - Objet - World of Warcraft/valeur versatilé'), 
+    11)
 
