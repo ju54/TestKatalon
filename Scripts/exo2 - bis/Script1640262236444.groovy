@@ -44,3 +44,6 @@ WebUI.verifyElementPresent(findTestObject('WOW/Page_Chahuteurs de cadavre - Obje
 WebUI.verifyElementPresent(findTestObject('WOW/Page_Chahuteurs de cadavre - Objet - World _4f6cc4/Page_Chahuteurs de cadavre - Objet - World of Warcraft/valeur versatilé'), 
     11)
 
+WebUI.verifyElementPresent(findTestObject('WOW/Page_Chahuteurs de cadavre - Objet - World _4f6cc4/Page_Chahuteurs de cadavre - Objet - World of Warcraft/niveau requis'), 
+    10)
+

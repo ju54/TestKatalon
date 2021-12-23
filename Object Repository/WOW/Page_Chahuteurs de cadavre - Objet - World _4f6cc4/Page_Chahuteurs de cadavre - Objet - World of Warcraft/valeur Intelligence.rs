@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='tt2168']/table/tbody/tr/td/table/tbody/tr/td/span[3]</value>
+         <value>//span[contains(text(), 'Intelligence')]</value>
       </entry>
       <entry>
          <key>CSS</key>

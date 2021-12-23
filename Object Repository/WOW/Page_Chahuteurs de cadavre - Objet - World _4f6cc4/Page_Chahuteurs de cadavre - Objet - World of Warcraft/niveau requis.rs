@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>valeur Endurance</name>
+   <name>niveau requis</name>
    <tag></tag>
-   <elementGuidId>ddb32a6e-f0ff-4e01-80bf-ac28bd11ad5e</elementGuidId>
+   <elementGuidId>3c4965cd-011b-4e9d-8128-a25045474486</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//span[contains(text(), 'Endurance')]</value>
+         <value>//div[@id=&quot;tt2168&quot;]//td[contains(text(), 'Niveau')]</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -21,62 +21,55 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>span</value>
+      <value>td</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>+18 Endurance</value>
+      <value>Niveau 10 requisPrix de Vente: 11 81 49</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;tt2168&quot;)/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[1]/span[4]</value>
+      <value>id(&quot;tt2168&quot;)/table[1]/tbody[1]/tr[1]/td[1]/table[2]/tbody[1]/tr[1]/td[1]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='tt2168']/table/tbody/tr/td/table/tbody/tr/td/span[4]</value>
+      <value>//div[@id='tt2168']/table/tbody/tr/td/table[2]/tbody/tr/td</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Armure : 2'])[1]/following::span[2]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='(0.28% au niveau 70)'])[1]/following::td[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tissu'])[2]/following::span[3]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Niveau'])[1]/preceding::td[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='(0.39% au niveau 70)'])[1]/preceding::span[2]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>//*/text()[normalize-space(.)='+18 Endurance']/parent::*</value>
+      <value>//*/text()[normalize-space(.)='Niveau']/parent::*</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//td/span[4]</value>
+      <value>//table[2]/tbody/tr/td</value>
    </webElementXpaths>
 </WebElementEntity>

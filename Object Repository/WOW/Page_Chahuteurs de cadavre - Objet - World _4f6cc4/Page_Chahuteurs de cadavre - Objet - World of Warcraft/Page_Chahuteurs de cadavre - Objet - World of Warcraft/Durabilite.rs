@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>valeur Endurance</name>
+   <name>Durabilite</name>
    <tag></tag>
-   <elementGuidId>ddb32a6e-f0ff-4e01-80bf-ac28bd11ad5e</elementGuidId>
+   <elementGuidId>608474b3-e284-4a74-a8a3-dc0645a5148b</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//span[contains(text(), 'Endurance')]</value>
+         <value>//div[@id]//td/b/..</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value></value>
+         <value>td > table > tbody > tr > td</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,62 +21,55 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>span</value>
+      <value>td</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>+18 Endurance</value>
+      <value>Chahuteurs de cadavreNiveau d'objet 57Lié quand ramasséPiedsTissuArmure : 2+12 Intelligence+18 EnduranceAugmente votre score de hâte de +13 (0.39% au niveau 70)+11 Versatilité (0.28% au niveau 70)Durabilité 60 / 60</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;tt2168&quot;)/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[1]/span[4]</value>
+      <value>id(&quot;tt2168&quot;)/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[1]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='tt2168']/table/tbody/tr/td/table/tbody/tr/td/span[4]</value>
+      <value>//div[@id='tt2168']/table/tbody/tr/td/table/tbody/tr/td</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Armure : 2'])[1]/following::span[2]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='TOP ARTICLES'])[1]/following::td[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tissu'])[2]/following::span[3]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Privacy Policy'])[1]/following::td[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='(0.39% au niveau 70)'])[1]/preceding::span[2]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>//*/text()[normalize-space(.)='+18 Endurance']/parent::*</value>
+      <value>//*/text()[normalize-space(.)='Lié quand ramassé']/parent::*</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//td/span[4]</value>
+      <value>//td/table/tbody/tr/td</value>
    </webElementXpaths>
 </WebElementEntity>
