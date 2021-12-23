@@ -27,13 +27,16 @@ WebUI.waitForPageLoad(5)
 
 WebUI.click(findTestObject('Object Repository/WOW/Page_Wowhead  La seule chose sur laquelle l_610dae/button_Jaccepte'))
 
-WebUI.waitForPageLoad(8)
+WebUI.waitForElementNotVisible(findTestObject('Object Repository/WOW/Page_Wowhead  La seule chose sur laquelle l_610dae/button_Jaccepte'), 
+    5)
 
-WebUI.click(findTestObject('Object Repository/WOW/Page_Wowhead  Chasse les jours pluvieux/button_Peut-tre plus tard'))
+WebUI.click(findTestObject('Object Repository/WOW/Page_Wowhead  Rend les chargements supporta_4a9743/button_Refuser'))
 
 WebUI.setText(findTestObject('Object Repository/WOW/Page_Wowhead  Chasse les jours pluvieux/input_Live_q'), 'Lardeur')
 
 WebUI.click(findTestObject('Object Repository/WOW/Page_Wowhead  Chasse les jours pluvieux/a_PNJLardeur'))
 
 WebUI.click(findTestObject('Object Repository/WOW/Page_Lardeur - PNJ - World of Warcraft/a_Chahuteurs de cadavre'))
+
+WebUI.verifyTextPresent('Chahuteurs de cadavre', true, FailureHandling.STOP_ON_FAILURE)
 
